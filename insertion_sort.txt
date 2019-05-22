@@ -1,0 +1,12 @@
+[Array index starting from 1]
+1. Accept elements of array arr
+2. FOR i = 1 to n
+	2.1. pos = i
+	2.2. WHILE pos>=1 and arr[pos]>=arr[i]
+		2.2.1. pos = pos - 1;
+	2.3. pos = pos + 1; // 'pos' is the indice where 'i' should be inserted
+	2.4. e = arr[i] //save the 'i'th element in a variable, as we are going to overwrite it
+	2.5. FOR j = i to pos+1 (decreasing loop)
+		2.5.1. arr[j] = arr[j-1]
+	2.6. arr[pos] = e
+3. Display array
